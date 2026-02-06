@@ -9,14 +9,9 @@
     "companyInitial": "S",
     "companyColor": "from-blue-500 to-blue-600",
     "description": "We're looking for a Senior Product Designer to join our growing design team. You'll work on designing intuitive payment experiences for millions of businesses worldwide.",
-    "responsibilities": [
-      "Lead design projects from concept to launch",
-      "Create user flows, wireframes, and high-fidelity mockups",
-      "Conduct user research and usability testing",
-      "Collaborate with cross-functional teams",
-      "Maintain and evolve our design system"
-    ],
+   
     "skills": ["Figma", "User Research", "Prototyping", "Design Systems", "UI/UX Design"],
+    "niceToHave": ["FinTech Experience", "Developer Empathy", "Data Analysis", "Motion Design"],
     "experience": "5+ years",
     "salary": "$150k - $200k"
   },
@@ -30,14 +25,9 @@
     "companyInitial": "F",
     "companyColor": "from-emerald-500 to-emerald-600",
     "description": "Join our frontend team to build the next generation of design tools used by millions of designers and developers.",
-    "responsibilities": [
-      "Build and maintain complex React applications",
-      "Optimize application performance and rendering",
-      "Implement new features and improvements",
-      "Write clean, maintainable code",
-      "Participate in code reviews"
-    ],
+  
     "skills": ["React", "TypeScript", "JavaScript", "CSS", "WebGL"],
+    "niceToHave": ["Canvas API", "WebAssembly", "GraphQL", "Testing (Jest/Vitest)"],
     "experience": "3+ years",
     "salary": "$130k - $180k"
   },
@@ -51,14 +41,9 @@
     "companyInitial": "N",
     "companyColor": "from-violet-500 to-violet-600",
     "description": "Join our data science team for a summer internship where you'll work on real projects that impact millions of users.",
-    "responsibilities": [
-      "Analyze user behavior and engagement metrics",
-      "Build data pipelines and dashboards",
-      "Conduct A/B testing and statistical analysis",
-      "Collaborate with product and engineering teams",
-      "Present findings to stakeholders"
-    ],
+  
     "skills": ["Python", "SQL", "Statistics", "Data Visualization", "Machine Learning"],
+    "niceToHave": ["R Programming", "Tableau", "Apache Spark", "Natural Language Processing"],
     "experience": "Currently pursuing degree",
     "salary": "$40/hour"
   },
@@ -72,14 +57,9 @@
     "companyInitial": "L",
     "companyColor": "from-amber-500 to-orange-500",
     "description": "Lead our marketing efforts to grow Linear's brand and user base. You'll develop and execute marketing strategies.",
-    "responsibilities": [
-      "Develop and execute marketing strategies",
-      "Manage content creation and distribution",
-      "Analyze marketing metrics and ROI",
-      "Collaborate with product team on launches",
-      "Build and manage marketing budget"
-    ],
+  
     "skills": ["Digital Marketing", "Content Strategy", "SEO/SEM", "Analytics", "Brand Management"],
+    "niceToHave": ["Product Marketing", "Growth Hacking", "Email Marketing", "Social Media Ads"],
     "experience": "4+ years",
     "salary": "$120k - $160k"
   },
@@ -93,14 +73,9 @@
     "companyInitial": "A",
     "companyColor": "from-rose-500 to-pink-500",
     "description": "Build scalable backend systems that power Airbnb's platform serving millions of guests and hosts worldwide.",
-    "responsibilities": [
-      "Design and implement scalable APIs",
-      "Optimize database queries and performance",
-      "Build microservices architecture",
-      "Ensure system reliability and uptime",
-      "Mentor junior engineers"
-    ],
+  
     "skills": ["Node.js", "Python", "PostgreSQL", "Redis", "AWS", "Docker"],
+    "niceToHave": ["Kubernetes", "GraphQL", "MongoDB", "System Design", "Go"],
     "experience": "3+ years",
     "salary": "$140k - $190k"
   },
@@ -114,14 +89,9 @@
     "companyInitial": "V",
     "companyColor": "from-cyan-500 to-teal-500",
     "description": "Join our UX research team to help understand developer needs and improve the Vercel platform.",
-    "responsibilities": [
-      "Conduct user interviews and surveys",
-      "Perform usability testing sessions",
-      "Analyze qualitative and quantitative data",
-      "Create research reports and presentations",
-      "Collaborate with design and product teams"
-    ],
+  
     "skills": ["User Research", "Usability Testing", "Data Analysis", "Figma", "Communication"],
+    "niceToHave": ["Developer Experience", "Technical Writing", "A/B Testing", "Prototyping"],
     "experience": "Currently pursuing degree",
     "salary": "$35/hour"
   }

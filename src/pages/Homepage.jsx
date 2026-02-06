@@ -12,6 +12,9 @@ const HomePage = () => {
     navigate(`/job/${job.id}`);
   };
 
+
+  const jobsToShow = jobs.slice(0, 4);
+
   return (
     <div className="min-h-full px-4 py-12 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
@@ -27,12 +30,14 @@ const HomePage = () => {
 
         <SearchBar />
 
-        <JobList jobs={jobs} onJobClick={handleJobClick} />
+        <JobList jobs={jobsToShow} onJobClick={handleJobClick} />
 
+    
         <div className="mt-10 text-center">
           <p className="text-slate-400">
-            Showing <span className="font-semibold text-slate-600">{jobs.length}</span> of{' '}
-            <span className="font-semibold text-slate-600">124</span> available positions
+            Showing{' '}
+            <span className="font-semibold text-slate-600">{jobsToShow.length}</span> of{' '}
+            <span className="font-semibold text-slate-600">{jobs.length}</span> available positions
           </p>
         </div>
       </div>

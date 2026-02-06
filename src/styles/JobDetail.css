@@ -1,49 +1,4 @@
-/* =========================
-   Page Wrapper
-========================= */
-.job-detail-page {
-  background-color: #f8fafc;
-}
 
-/* =========================
-   Reusable Card
-========================= */
-.job-card {
-  background: white;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-}
-
-/* =========================
-   Back Button
-========================= */
-.back-button {
-  display: flex;
-  align-items: center;
-  color: #475569;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.back-button:hover {
-  color: #0f172a;
-}
-
-/* =========================
-   Job Type Badge
-========================= */
-.job-type-badge {
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-
-/* =========================
-   Header & Content Animations
-========================= */
 .header-section {
   animation: slideDown 0.6s ease-out;
 }
@@ -52,46 +7,11 @@
   animation: fadeIn 0.6s ease-out 0.15s both;
 }
 
-/* =========================
-   Apply Button
-========================= */
-.apply-btn {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
-}
-
-.apply-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.35);
-}
-
-.apply-btn:active {
-  transform: translateY(0);
-}
-
-/* Secondary button */
-.secondary-btn {
-  background: #0f172a;
-  transition: background 0.2s ease;
-}
-
-.secondary-btn:hover {
-  background: #020617;
-}
-
-/* =========================
-   Skill Chips
-========================= */
 .skill-chip {
-  transition: all 0.2s ease;
   animation: chipSlideIn 0.4s ease-out backwards;
 }
 
-.skill-chip:hover {
-  transform: translateY(-2px);
-}
-
-/* Staggered animation */
+/* Staggered animation delays */
 .skill-chip:nth-child(1) { animation-delay: 0.3s; }
 .skill-chip:nth-child(2) { animation-delay: 0.35s; }
 .skill-chip:nth-child(3) { animation-delay: 0.4s; }
@@ -101,39 +21,6 @@
 .skill-chip:nth-child(7) { animation-delay: 0.6s; }
 .skill-chip:nth-child(8) { animation-delay: 0.65s; }
 
-/* =========================
-   Sticky Apply Section
-========================= */
-.sticky-apply {
-  position: sticky;
-  bottom: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,0) 0%,
-    rgba(248,250,252,0.98) 50%,
-    rgba(248,250,252,1) 100%
-  );
-  padding-top: 20px;
-  padding-bottom: 20px;
-  z-index: 10;
-}
-
-/* =========================
-   Section Divider
-========================= */
-.section-divider {
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    #e2e8f0 50%,
-    transparent 100%
-  );
-}
-
-/* =========================
-   Animations
-========================= */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -146,12 +33,8 @@
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes chipSlideIn {
@@ -162,21 +45,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-/* =========================
-   Responsive Adjustments
-========================= */
-@media (max-width: 768px) {
-  .job-card {
-    padding: 1.5rem;
-  }
-
-  .sticky-apply {
-    position: static;
-    background: transparent;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }

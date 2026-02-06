@@ -22,7 +22,7 @@ export const hoverColorMap = {
 // Button variants
 export const buttonVariants = {
   primary: 'bg-slate-800 hover:bg-slate-900 text-white',
-  secondary: 'bg-slate-100 hover:bg-slate-200 text-slate-800',
+  secondary: 'bg-[#6150FF] hover:bg-[#4E3FCC]  text-white',
 };
 
 // Button base styles

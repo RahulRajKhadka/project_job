@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Button from "./Button";
 import "../styles/SucessModal.css";
-
 const SuccessModal = ({ onClose }) => {
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -11,15 +10,18 @@ const SuccessModal = ({ onClose }) => {
   }, []);
 
   return (
-    <div className="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 animate-fadeIn">
-      {/* Backdrop */}
-      <div className="modal-backdrop absolute inset-0" onClick={onClose} />
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-in fade-in duration-300">
+      {/* Backdrop - uses Tailwind's backdrop-blur */}
+      <div 
+        className="absolute inset-0 bg-black/40 backdrop-blur-sm" 
+        onClick={onClose} 
+      />
 
       {/* Modal Card */}
-      <div className="relative w-full max-w-md animate-scaleUp">
-        <div className="modal-card bg-white rounded-3xl p-8 sm:p-10 shadow-2xl border border-slate-100">
+      <div className="relative w-full max-w-md animate-in zoom-in-95 duration-400">
+        <div className="bg-white rounded-3xl p-8 sm:p-10 shadow-2xl border border-slate-100">
           {/* Icon */}
-          <div className="flex justify-center mb-8 animate-bounceIn">
+          <div className="flex justify-center mb-8 animate-in zoom-in-50 duration-600">
             <div className="w-20 h-20 bg-gradient-to-br from-emerald-100 to-green-100 rounded-full flex items-center justify-center">
               <svg
                 className="w-10 h-10"
@@ -38,16 +40,16 @@ const SuccessModal = ({ onClose }) => {
             </div>
           </div>
 
-          <h1 className="text-3xl font-bold text-center text-slate-900 mb-3 animate-slideDown">
+          <h1 className="text-3xl font-bold text-center text-slate-900 mb-3 animate-in slide-in-from-top-4 duration-500">
             Application Submitted Successfully!
           </h1>
 
-          <p className="text-center text-slate-600 text-lg mb-8 animate-slideDown delay-100">
+          <p className="text-center text-slate-600 text-lg mb-8 animate-in slide-in-from-top-4 duration-500 delay-100">
             Thank you for applying. The company will review your application and
             contact you if shortlisted.
           </p>
 
-          <div className="space-y-3 animate-slideDown delay-200">
+          <div className="space-y-3 animate-in slide-in-from-top-4 duration-500 delay-200">
             <Button onClick={onClose} fullWidth variant="primary">
               Back to Jobs
             </Button>

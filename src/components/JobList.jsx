@@ -2,7 +2,7 @@ import JobCard from './JobCard';
 
 const JobList = ({ jobs, onJobClick }) => {
   return (
-    <div className="grid gap-5 md:grid-cols-2">
+    <div className="grid gap-8 md:grid-cols-2">
       {jobs.map((job) => (
         <JobCard 
           key={job.id} 
