@@ -1,9 +1,9 @@
 import Button from './Button';
 import { typeColorMap, hoverColorMap } from '../utils/colors.js';
 
-const JobCard = ({ job}) => {
+const JobCard = ({ job, onJobClick }) => {
   const handleClick = () => {
-    
+    onJobClick(job);
   };
 
   return (

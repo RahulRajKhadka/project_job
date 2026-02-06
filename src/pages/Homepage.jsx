@@ -1,10 +1,16 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import SearchBar from '../components/SearchBar.jsx';
 import JobList from '../components/JobList.jsx';
 import jobsData from '../data/jobs.json';
 
-const HomePage = ({ onJobClick }) => {
+const HomePage = () => {
   const [jobs] = useState(jobsData);
+  const navigate = useNavigate();
+
+  const handleJobClick = (job) => {
+    navigate(`/job/${job.id}`);
+  };
 
   return (
     <div className="min-h-full px-4 py-12 sm:px-6 lg:px-8">
@@ -19,14 +25,10 @@ const HomePage = ({ onJobClick }) => {
           </p>
         </div>
 
-       
         <SearchBar />
 
-        <JobList jobs={jobs} onJobClick={onJobClick} />
+        <JobList jobs={jobs} onJobClick={handleJobClick} />
 
-   
-
-    
         <div className="mt-10 text-center">
           <p className="text-slate-400">
             Showing <span className="font-semibold text-slate-600">{jobs.length}</span> of{' '}

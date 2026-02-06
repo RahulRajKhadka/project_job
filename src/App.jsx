@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/Homepage.jsx';
 import JobDetailPage from './pages/JobDetail.jsx';
 
 function App() {
